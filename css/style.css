@@ -1,0 +1,351 @@
+/* MAIN STYLING*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  background: rgba(0, 0, 0, 1);
+  color: antiquewhite;
+  scroll-behavior: smooth;
+}
+/* END OF MAI STYLING*/
+
+/* HEADER STYLING */
+#header {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  background-color: rgba(53, 3, 3, 1);
+}
+.first-circle {
+  height: 200px;
+  width: 200px;
+  border: solid 5px rgba(207, 157, 157, 0.56);
+  background: #ffaa00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#header-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+}
+.header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  line-height: 59px;
+  font-weight: 400;
+}
+.title {
+  color: rgba(255, 199, 2, 1);
+  font-size: 50px;
+
+  padding: 0;
+  margin: 0;
+}
+.title-2 {
+  color: whitesmoke;
+  font-size: 29px;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+#nav-bar {
+  padding: 0;
+  margin: 0;
+}
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 6em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 28px;
+  color: rgba(255, 199, 2, 1);
+  padding: 0;
+  margin: 0;
+}
+#nav-bar a:hover {
+  color: aqua;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* END OF HEADER STYLING */
+
+/* STYLING FOR LARGER SCREENS*/
+
+@media (min-width: 991px) {
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .full-height-grow {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .preview {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .preview-edit {
+    color: #ffaa00;
+  }
+
+  .gallery-container {
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .gallery-container img {
+    width: 230px;
+    padding: 5px;
+    transition: 1000ms;
+  }
+  .gallery-container img:hover {
+    transform: scale(1.1);
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-me {
+    line-height: 40px;
+    font-size: 1.5rem;
+  }
+  .aboutme-image {
+    border-radius: 25px;
+  }
+  .details {
+    display: flex;
+    gap: 2rem;
+  }
+  .about-me {
+    padding: 0;
+    margin: 0;
+  }
+  #Contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .contact-title {
+    text-align: center;
+  }
+  /* Add some basic styling to the form */
+  form.form {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid rgba(53, 3, 3, 1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Style the input fields */
+  form.form input.input,
+  form.form textarea.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Style the submit button */
+  form.form input[type="submit"].submit {
+    width: 100%;
+    background-color: #ffaa00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add a hover effect to the submit button */
+  form.form input[type="submit"].submit:hover {
+    background-color: aqua;
+  }
+}
+/* END 0F STYLING FOR LARGER SCREENS*/
+
+/* STYLING FOR SMALLER SCREENS*/
+@media (max-width: 991px) {
+  /* HEADER STYLING FOR SMLLER SCREENS*/
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(53, 3, 3, 1);
+    width: 100%;
+  }
+  .first-circle {
+    height: 200px;
+    width: 200px;
+    border: solid 5px rgba(207, 157, 157, 0.56);
+    background: #ffaa00;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  #header-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+  }
+  .header-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 59px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    margin: 0 1.5rem;
+    color: rgba(255, 199, 2, 1);
+    font-size: calc(50px - 30px);
+
+    padding: 0;
+    margin: 0;
+  }
+  .title-2 {
+    color: whitesmoke;
+    font-size: calc(29px / 2);
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+  }
+  #nav-bar {
+    padding: 0;
+    margin: 0;
+  }
+  #nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: calc(6em / 2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #nav-bar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: calc(28px - 15px);
+    color: rgba(255, 199, 2, 1);
+    padding: 0;
+    margin: 0;
+  }
+  #nav-bar a:hover {
+    color: aqua;
+  }
+  .welcome {
+    text-align: center;
+    font-size: 20px;
+  }
+  .preview {
+    text-align: center;
+    font-size: 1.5em;
+    font-size: 20px;
+  }
+  .preview-edit {
+    color: #ffaa00;
+    font-size: 20px;
+  }
+  /* END OF HEADER STYLING FOR SMLLER SCREENS*/
+
+  /* GALLERY STYLING */
+  #Gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery-container {
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .gallery-container img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    transition: 1000ms;
+  }
+  .gallery-container img:hover {
+    transform: scale(1.1);
+  }
+  /*END OF GALLERY STYLING */
+  /* ABOUT STYLING FOR SMALLER SCREENS*/
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .about-text {
+    text-align: center;
+    font-size: 20px;
+  }
+  .about-me {
+    line-height: 40px;
+    font-size: 1.5rem;
+  }
+  .aboutme-image {
+    border-radius: 25px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .about-me {
+    padding: 0 20px;
+    margin: 0;
+    font-size: 20px;
+  }
+}
+/* END 0F STYLING FOR SMALLER SCREENS*/
