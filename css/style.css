@@ -16,6 +16,44 @@ body {
   color: antiquewhite;
   scroll-behavior: smooth;
 }
+#back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffaa00;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#back-to-top-button:hover {
+  background-color: aqua;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 2rem;
+  background: rgba(53, 3, 3, 1);
+  color: #ffaa00;
+  margin-top: 20px;
+}
+.footer__links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+}
+.footer__links a {
+  text-decoration: none;
+  color: #ffaa00;
+}
+
 /* END OF MAI STYLING*/
 
 /* HEADER STYLING */
@@ -147,8 +185,16 @@ body {
     line-height: 40px;
     font-size: 1.5rem;
   }
+  .about-image {
+    border: 3px solid rgba(53, 3, 3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 310px;
+  }
   .aboutme-image {
-    border-radius: 25px;
+    object-fit: contain;
   }
   .details {
     display: flex;
@@ -332,8 +378,16 @@ body {
     line-height: 40px;
     font-size: 1.5rem;
   }
+  .about-image {
+    border: 3px solid rgba(53, 3, 3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 310px;
+  }
   .aboutme-image {
-    border-radius: 25px;
+    object-fit: contain;
   }
   .details {
     display: flex;
@@ -345,7 +399,7 @@ body {
   .about-me {
     padding: 0 20px;
     margin: 0;
-    font-size: 20px;
+    font-size: calc(28px - 13px);
   }
   #Contact {
     display: flex;
@@ -390,6 +444,18 @@ body {
   /* Add a hover effect to the submit button */
   form.form input[type="submit"].submit:hover {
     background-color: aqua;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .footer__links a {
+    text-decoration: none;
+    color: #ffaa00;
+    font-size: 0.8rem;
   }
 }
 /* END 0F STYLING FOR SMALLER SCREENS*/
