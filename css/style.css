@@ -377,6 +377,7 @@ body {
   .about-me {
     line-height: 40px;
     font-size: 1.5rem;
+    text-align: justify;
   }
   .about-image {
     border: 3px solid rgba(53, 3, 3, 1);
